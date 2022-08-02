@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_01_172404) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_02_052406) do
+  create_table "movements", force: :cascade do |t|
+    t.integer "product_id", null: false
+    t.integer "movement_type"
+    t.integer "quantity"
+    t.text "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_movements_on_product_id"
+  end
+
   create_table "products", force: :cascade do |t|
     t.string "name"
     t.string "reference"
@@ -20,4 +30,5 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_01_172404) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "movements", "products"
 end

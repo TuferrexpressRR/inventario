@@ -1,0 +1,18 @@
+<h1>Crear movimiento</h1>
+<div class = "row">
+    <div class = "col-lg-12">
+        <div class = "card">
+            <table class = "table">
+                <tr>
+                    <td><b>Nombre:</b></td>
+                    <td><%= @product.name %></td>
+                </tr>    
+                <tr>
+                    <td><b>Referencia:</b></td>
+                    <td><%= @product.reference %></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<%= link_to "Regresar a listado de productos", products_path, class:'btn btn-primary' %>
