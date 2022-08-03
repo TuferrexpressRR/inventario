@@ -1,6 +1,6 @@
 class DashboardController < ApplicationController
   def index
-    @products = Product.all.limit(10)
+    @products = Product.all.limit(4)
   end
   def dashboard
     @latest_movements = Movement.last(10)
