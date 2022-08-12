@@ -75,5 +75,7 @@ end
 gem 'rubyzip', '>= 1.2.1'
 gem 'caxlsx'
 gem 'caxlsx_rails'
+gem 'axlsx'
+gem 'axlsx_rails'
 
 gem 'devise'
