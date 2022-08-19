@@ -3188,3 +3188,2179 @@ Started GET "/users/js/scripts.js" for 127.0.0.1 at 2022-08-11 11:52:50 -0400
   
 ActionController::RoutingError (No route matches [GET] "/users/js/scripts.js"):
   
+Started GET "/" for ::1 at 2022-08-19 12:50:00 -0400
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/dashboard/index.html.erb:49
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 45.4ms | Allocations: 7702)
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 336)
+  Rendered shared/_header.html.erb (Duration: 2.5ms | Allocations: 682)
+  Rendered shared/_footer.html.erb (Duration: 0.8ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 1141.1ms | Allocations: 122789)
+Completed 200 OK in 1328ms (Views: 1242.5ms | ActiveRecord: 2.7ms | Allocations: 132775)
+
+
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 12:50:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+  
+Started GET "/carts" for ::1 at 2022-08-19 12:50:13 -0400
+Processing by CartsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering carts/index.html.erb within layouts/application
+  [1m[36mCart Load (0.2ms)[0m  [1m[34mSELECT "carts".* FROM "carts"[0m
+  ↳ app/views/carts/index.html.erb:6
+  Rendered carts/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1337)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 51)
+  Rendered shared/_header.html.erb (Duration: 1.8ms | Allocations: 521)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4630)
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.2ms | Allocations: 6242)
+
+
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 12:50:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+Started GET "/products" for ::1 at 2022-08-19 12:50:14 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 251.1ms | Allocations: 25314)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 521)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 259.7ms | Allocations: 28817)
+Completed 200 OK in 266ms (Views: 259.3ms | ActiveRecord: 4.1ms | Allocations: 30012)
+
+
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 12:50:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+Started GET "/products/1" for ::1 at 2022-08-19 12:50:18 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 16.3ms | Allocations: 1959)
+Started GET "/products/assets/favicon.ico" for ::1 at 2022-08-19 12:50:18 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 48)
+  
+ActionController::RoutingError (No route matches [GET] "/products/assets/favicon.ico"):
+  
+  Rendered shared/_header.html.erb (Duration: 101.8ms | Allocations: 13536)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 135.0ms | Allocations: 18669)
+Completed 200 OK in 156ms (Views: 138.4ms | ActiveRecord: 0.6ms | Allocations: 20654)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 12:50:19 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1/edit" for ::1 at 2022-08-19 12:50:33 -0400
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:38:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering products/edit.html.erb within layouts/application
+Started GET "/products/1/assets/favicon.ico" for ::1 at 2022-08-19 12:50:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/assets/favicon.ico"):
+  
+  Rendered products/_form.html.erb (Duration: 416.0ms | Allocations: 54407)
+  Rendered products/edit.html.erb within layouts/application (Duration: 419.4ms | Allocations: 55128)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 47)
+  Rendered shared/_header.html.erb (Duration: 2.0ms | Allocations: 679)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 442.1ms | Allocations: 63085)
+Completed 200 OK in 449ms (Views: 444.3ms | ActiveRecord: 0.4ms | Allocations: 63979)
+
+
+Started GET "/products/1/js/scripts.js" for ::1 at 2022-08-19 12:50:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/js/scripts.js"):
+  
+Started GET "/products" for ::1 at 2022-08-19 12:50:40 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 12:50:40 -0400
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 126.6ms | Allocations: 28386)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 1.5ms | Allocations: 1401)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 141.0ms | Allocations: 35269)
+Completed 200 OK in 143ms (Views: 138.4ms | ActiveRecord: 3.5ms | Allocations: 35815)
+
+
+Started GET "/products" for ::1 at 2022-08-19 13:18:58 -0400
+  
+SyntaxError (/home/miguel/Documentos/Inventario/app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products" for ::1 at 2022-08-19 13:19:34 -0400
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/miguel/Documentos/Inventario/app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for ::1 at 2022-08-19 13:19:41 -0400
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/dashboard/index.html.erb:49
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 123.3ms | Allocations: 7150)
+  Rendered shared/_navbar.html.erb (Duration: 2.0ms | Allocations: 328)
+  Rendered shared/_header.html.erb (Duration: 38.6ms | Allocations: 697)
+  Rendered shared/_footer.html.erb (Duration: 0.9ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 2609.3ms | Allocations: 45764)
+Completed 200 OK in 2854ms (Views: 2610.9ms | ActiveRecord: 2.5ms | Allocations: 52275)
+
+
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:19:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+Started GET "/products" for ::1 at 2022-08-19 13:19:48 -0400
+  
+SyntaxError (/home/miguel/Documentos/Inventario/app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input
+app/controllers/products_controller.rb:84: syntax error, unexpected `end', expecting end-of-input
+Started GET "/products" for ::1 at 2022-08-19 13:20:32 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 215.3ms | Allocations: 25082)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 49)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 522)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 243.1ms | Allocations: 40071)
+Completed 200 OK in 250ms (Views: 245.7ms | ActiveRecord: 5.4ms | Allocations: 42754)
+
+
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:20:33 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+Started GET "/products/1" for ::1 at 2022-08-19 13:20:49 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 47.9ms | Allocations: 4934)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 5016)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.7ms | Allocations: 6625)
+
+
+  
+ActionView::Template::Error (undefined method `delete_product_path' for #<ActionView::Base:0x00000000014910>
+Did you mean?  edit_product_path):
+     5:     <%= link_to "Editar", edit_product_path(@product), class: 'btn btn-primary' %>
+     6:     <%= link_to "Crear movimiento", new_movement_product_path(@product), class: 'btn btn-primary' %>
+     7:     <%= link_to "Descargar movimientos", product_path(@product, format: :xlsx), class: 'btn btn-success' %>
+     8:     <%= link_to "Eliminar producto", delete_product_path(@product), class: 'btn btn-danger' %>
+     9:     <div class="card" style="padding: 20px;">
+    10:       <table class="table">
+    11:         <tr>
+  
+app/views/products/show.html.erb:8
+Started GET "/products/1" for ::1 at 2022-08-19 13:21:07 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (Duration: 34.3ms | Allocations: 5059)
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 5148)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.2ms | Allocations: 6870)
+
+
+  
+ActionView::Template::Error (undefined method `destroy_product_path' for #<ActionView::Base:0x00000000014c80>
+Did you mean?  destroy_session_path):
+     5:     <%= link_to "Editar", edit_product_path(@product), class: 'btn btn-primary' %>
+     6:     <%= link_to "Crear movimiento", new_movement_product_path(@product), class: 'btn btn-primary' %>
+     7:     <%= link_to "Descargar movimientos", product_path(@product, format: :xlsx), class: 'btn btn-success' %>
+     8:     <%= link_to "Eliminar producto", destroy_product_path(@product), class: 'btn btn-danger' %>
+     9:     <div class="card" style="padding: 20px;">
+    10:       <table class="table">
+    11:         <tr>
+  
+app/views/products/show.html.erb:8
+Started GET "/products/1" for ::1 at 2022-08-19 13:21:44 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1806)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 253)
+  Rendered shared/_header.html.erb (Duration: 3.7ms | Allocations: 673)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 6298)
+Completed 200 OK in 35ms (Views: 29.9ms | ActiveRecord: 0.7ms | Allocations: 8094)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:21:44 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1" for ::1 at 2022-08-19 13:21:48 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 8.5ms | Allocations: 960)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 3.7ms | Allocations: 508)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 4188)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.5ms | Allocations: 5089)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:21:48 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1" for ::1 at 2022-08-19 13:21:54 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:21:54 -0400
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 73.2ms | Allocations: 13332)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 3.5ms | Allocations: 942)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 107.7ms | Allocations: 20887)
+Completed 200 OK in 121ms (Views: 115.0ms | ActiveRecord: 0.6ms | Allocations: 23220)
+
+
+Started GET "/products/1" for ::1 at 2022-08-19 13:23:44 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:23:44 -0400
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 66.9ms | Allocations: 14698)
+  Rendered shared/_navbar.html.erb (Duration: 11.6ms | Allocations: 3119)
+  Rendered shared/_header.html.erb (Duration: 19.1ms | Allocations: 9546)
+  Rendered shared/_footer.html.erb (Duration: 40.8ms | Allocations: 12191)
+  Rendered layout layouts/application.html.erb (Duration: 168.4ms | Allocations: 48535)
+Completed 200 OK in 187ms (Views: 183.1ms | ActiveRecord: 0.4ms | Allocations: 51479)
+
+
+Started GET "/products" for ::1 at 2022-08-19 13:23:50 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.6ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 70.7ms | Allocations: 13066)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.3ms | Allocations: 508)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 85.6ms | Allocations: 16300)
+Completed 200 OK in 90ms (Views: 83.4ms | ActiveRecord: 4.6ms | Allocations: 16805)
+
+
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:23:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+Started GET "/products/1" for ::1 at 2022-08-19 13:23:56 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1005)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.0ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 4230)
+Completed 200 OK in 25ms (Views: 21.4ms | ActiveRecord: 0.4ms | Allocations: 5102)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:23:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:23:58 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.5ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 4238)
+Completed 200 OK in 24ms (Views: 20.6ms | ActiveRecord: 0.4ms | Allocations: 5084)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:23:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:23:59 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 1.9ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 4256)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.4ms | Allocations: 5101)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:23:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:23:59 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1479)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:23:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 3.7ms | Allocations: 838)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 103.0ms | Allocations: 20204)
+Completed 200 OK in 110ms (Views: 105.4ms | ActiveRecord: 0.7ms | Allocations: 21079)
+
+
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:24:02 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1226)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:24:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 1.9ms | Allocations: 738)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 104.9ms | Allocations: 19511)
+Completed 200 OK in 109ms (Views: 105.6ms | ActiveRecord: 0.5ms | Allocations: 20491)
+
+
+Started GET "/products" for ::1 at 2022-08-19 13:31:04 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.6ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:31:04 -0400
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 238.1ms | Allocations: 57002)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 1.6ms | Allocations: 1549)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 268.1ms | Allocations: 65615)
+Completed 200 OK in 270ms (Views: 269.3ms | ActiveRecord: 5.4ms | Allocations: 66063)
+
+
+Started GET "/products/1" for ::1 at 2022-08-19 13:31:07 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.8ms | Allocations: 521)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:31:07 -0400
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 5065)
+Completed 200 OK in 32ms (Views: 27.9ms | ActiveRecord: 0.7ms | Allocations: 5943)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:31:09 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:31:09 -0400
+  Rendered products/show.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1669)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 2.6ms | Allocations: 518)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 5362)
+Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 0.4ms | Allocations: 6211)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products" for ::1 at 2022-08-19 13:31:10 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.9ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:31:10 -0400
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.6ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 159.3ms | Allocations: 32536)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 16.7ms | Allocations: 8575)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 193.2ms | Allocations: 46486)
+Completed 200 OK in 197ms (Views: 190.1ms | ActiveRecord: 5.2ms | Allocations: 46885)
+
+
+Started GET "/products/1" for ::1 at 2022-08-19 13:31:13 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4238)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.4ms | Allocations: 5083)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:31:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:31:14 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1226)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:31:14 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 3.2ms | Allocations: 673)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 5373)
+Completed 200 OK in 35ms (Views: 30.1ms | ActiveRecord: 0.4ms | Allocations: 6222)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products" for ::1 at 2022-08-19 13:31:15 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:31:15 -0400
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 166.5ms | Allocations: 34236)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 5.0ms | Allocations: 1557)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 240.3ms | Allocations: 61322)
+Completed 200 OK in 243ms (Views: 238.0ms | ActiveRecord: 4.1ms | Allocations: 61911)
+
+
+Started GET "/products/2" for ::1 at 2022-08-19 13:31:20 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 1.1ms | Allocations: 508)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4223)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.5ms | Allocations: 5068)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:31:20 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/2?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:31:21 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.6ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 4229)
+Completed 200 OK in 22ms (Views: 18.3ms | ActiveRecord: 0.4ms | Allocations: 5074)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:31:21 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products" for ::1 at 2022-08-19 13:31:22 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:31:22 -0400
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 185.4ms | Allocations: 43331)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 6.1ms | Allocations: 1138)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 271.2ms | Allocations: 61630)
+Completed 200 OK in 275ms (Views: 268.2ms | ActiveRecord: 4.6ms | Allocations: 62130)
+
+
+Started GET "/products/2" for ::1 at 2022-08-19 13:31:29 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1004)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:31:29 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 2.0ms | Allocations: 527)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 5104)
+Completed 200 OK in 34ms (Views: 29.2ms | ActiveRecord: 0.7ms | Allocations: 5951)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:31:30 -0400
+Started GET "/products/2?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:31:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1566)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 6.0ms | Allocations: 1039)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 84.5ms | Allocations: 30321)
+Completed 200 OK in 99ms (Views: 88.6ms | ActiveRecord: 0.4ms | Allocations: 35881)
+
+
+Started GET "/products" for ::1 at 2022-08-19 13:31:31 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:31:31 -0400
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 129.8ms | Allocations: 27848)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 1.4ms | Allocations: 696)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 139.3ms | Allocations: 32778)
+Completed 200 OK in 142ms (Views: 137.5ms | ActiveRecord: 3.4ms | Allocations: 33183)
+
+
+Started GET "/" for ::1 at 2022-08-19 13:31:56 -0400
+Processing by DashboardController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dashboard/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" LIMIT ?[0m  [["LIMIT", 4]]
+  ↳ app/views/dashboard/index.html.erb:49
+  Rendered dashboard/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1232)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 82)
+  Rendered shared/_header.html.erb (Duration: 3.4ms | Allocations: 522)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 4807)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.4ms | Allocations: 5864)
+
+
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:31:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+Started GET "/products" for ::1 at 2022-08-19 13:32:03 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:32:03 -0400
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.6ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 158.1ms | Allocations: 31608)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 13.6ms | Allocations: 8677)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 231.0ms | Allocations: 58554)
+Completed 200 OK in 235ms (Views: 228.9ms | ActiveRecord: 4.7ms | Allocations: 59583)
+
+
+Started GET "/products/1" for ::1 at 2022-08-19 13:32:07 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:32:07 -0400
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 12.1ms | Allocations: 1842)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 2.6ms | Allocations: 542)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 5835)
+Completed 200 OK in 104ms (Views: 99.4ms | ActiveRecord: 0.5ms | Allocations: 19026)
+
+
+Started GET "/products/1/new_movement" for ::1 at 2022-08-19 13:32:12 -0400
+Processing by ProductsController#new_movement as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:58:in `new_movement'
+  Rendering layout layouts/application.html.erb
+  Rendering products/new_movement.html.erb within layouts/application
+  Rendered products/new_movement.html.erb within layouts/application (Duration: 133.3ms | Allocations: 2858)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 43)
+  Rendered shared/_header.html.erb (Duration: 1.1ms | Allocations: 514)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 140.6ms | Allocations: 6055)
+Completed 200 OK in 161ms (Views: 141.5ms | ActiveRecord: 0.7ms | Allocations: 10587)
+
+
+Started GET "/products/1/js/scripts.js" for ::1 at 2022-08-19 13:32:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/js/scripts.js"):
+  
+Started GET "/products/1" for ::1 at 2022-08-19 13:32:19 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 20.7ms | Allocations: 1208)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:32:19 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 2.1ms | Allocations: 518)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 5177)
+Completed 200 OK in 47ms (Views: 42.9ms | ActiveRecord: 0.4ms | Allocations: 6102)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:34:22 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1004)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:34:22 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 3.2ms | Allocations: 874)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 100.2ms | Allocations: 19699)
+Completed 200 OK in 105ms (Views: 101.6ms | ActiveRecord: 0.5ms | Allocations: 20681)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:37:24 -0400
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:37:25 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.8ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 28.1ms | Allocations: 9777)
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 262)
+  Rendered shared/_header.html.erb (Duration: 2.7ms | Allocations: 699)
+  Rendered shared/_footer.html.erb (Duration: 1.0ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 284.3ms | Allocations: 48289)
+Completed 200 OK in 327ms (Views: 285.3ms | ActiveRecord: 4.1ms | Allocations: 62801)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:37:25 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products" for ::1 at 2022-08-19 13:37:28 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:37:28 -0400
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 377.5ms | Allocations: 56896)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 9.1ms | Allocations: 3412)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 407.2ms | Allocations: 65575)
+Completed 200 OK in 411ms (Views: 404.5ms | ActiveRecord: 4.3ms | Allocations: 66105)
+
+
+Started GET "/products/1" for ::1 at 2022-08-19 13:37:30 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1009)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:37:30 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 1.6ms | Allocations: 515)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 5073)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.3ms | Allocations: 5948)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:37:31 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1113)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 41)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:37:31 -0400
+  Rendered shared/_header.html.erb (Duration: 3.5ms | Allocations: 667)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 5063)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 0.4ms | Allocations: 5910)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products" for ::1 at 2022-08-19 13:37:32 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:37:32 -0400
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (5.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 151.1ms | Allocations: 35109)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 3.2ms | Allocations: 1114)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 222.8ms | Allocations: 61551)
+Completed 200 OK in 224ms (Views: 214.6ms | ActiveRecord: 9.1ms | Allocations: 61993)
+
+
+Started GET "/products/new" for ::1 at 2022-08-19 13:37:51 -0400
+Processing by ProductsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (Duration: 942.4ms | Allocations: 4228)
+  Rendered products/new.html.erb within layouts/application (Duration: 943.8ms | Allocations: 4577)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 1.6ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 954.8ms | Allocations: 7748)
+Completed 200 OK in 957ms (Views: 955.7ms | ActiveRecord: 0.0ms | Allocations: 8230)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:37:52 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/delete" for ::1 at 2022-08-19 13:37:57 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"delete"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1020)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=delete):
+  
+app/controllers/products_controller.rb:28:in `show'
+Started GET "/products/1/delete" for ::1 at 2022-08-19 13:38:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/1/delete"):
+  
+Started GET "/products/1" for ::1 at 2022-08-19 13:38:51 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1096)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.0ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4324)
+Completed 200 OK in 21ms (Views: 17.7ms | ActiveRecord: 0.4ms | Allocations: 5193)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:38:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1:destroy" for ::1 at 2022-08-19 13:38:58 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"1:destroy"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 3.1ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 4238)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.6ms | Allocations: 5082)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:38:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:39:02 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 508)
+  Rendered shared/_footer.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 4226)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.3ms | Allocations: 5071)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:39:02 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:39:03 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1005)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 1.9ms | Allocations: 508)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 4212)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.3ms | Allocations: 5061)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:39:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=destroy" for ::1 at 2022-08-19 13:39:16 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"destroy"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 508)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4216)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.6ms | Allocations: 5058)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:39:16 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:39:18 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.4ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 4244)
+Completed 200 OK in 22ms (Views: 17.6ms | ActiveRecord: 0.4ms | Allocations: 5091)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:39:18 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:40:44 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  [1m[36mProduct Load (1.8ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 16.1ms | Allocations: 4568)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 52)
+  Rendered shared/_header.html.erb (Duration: 2.2ms | Allocations: 522)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 13)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 19576)
+Completed 200 OK in 71ms (Views: 49.1ms | ActiveRecord: 4.0ms | Allocations: 25696)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:40:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:40:47 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:40:47 -0400
+  Rendered products/show.html.erb within layouts/application (Duration: 16.1ms | Allocations: 1780)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 2.3ms | Allocations: 734)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 90.0ms | Allocations: 18315)
+Completed 200 OK in 98ms (Views: 92.1ms | ActiveRecord: 0.4ms | Allocations: 19414)
+
+
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:40:49 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1308)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:40:49 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 4.4ms | Allocations: 864)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 106.8ms | Allocations: 20296)
+Completed 200 OK in 114ms (Views: 109.8ms | ActiveRecord: 0.4ms | Allocations: 21476)
+
+
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:40:50 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:40:50 -0400
+  Rendered products/show.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1447)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 48)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_header.html.erb (Duration: 62.8ms | Allocations: 12851)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 94.3ms | Allocations: 17931)
+Completed 200 OK in 100ms (Views: 97.3ms | ActiveRecord: 0.4ms | Allocations: 18984)
+
+
+Started GET "/products/1?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:40:54 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"1"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1035)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:40:54 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 2.9ms | Allocations: 518)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 88.9ms | Allocations: 18119)
+Completed 200 OK in 93ms (Views: 89.8ms | ActiveRecord: 0.4ms | Allocations: 18965)
+
+
+Started GET "/products" for ::1 at 2022-08-19 13:40:56 -0400
+Processing by ProductsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  ↳ app/views/products/index.html.erb:25
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 1]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 2]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 4]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 5]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 6]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 7]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 8]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 9]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.7ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 10]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 11]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 12]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 13]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.4ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 14]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 15]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 16]]
+  ↳ app/models/product.rb:8:in `quantity'
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 17]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/index.html.erb within layouts/application (Duration: 73.9ms | Allocations: 12802)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.7ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 90.8ms | Allocations: 16047)
+Completed 200 OK in 92ms (Views: 86.7ms | ActiveRecord: 4.9ms | Allocations: 16425)
+
+
+Started GET "/js/scripts.js" for ::1 at 2022-08-19 13:40:56 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/js/scripts.js"):
+  
+Started GET "/products/3" for ::1 at 2022-08-19 13:40:59 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.3ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 4232)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.6ms | Allocations: 5078)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:40:59 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/3?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:41:00 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 508)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4229)
+Completed 200 OK in 23ms (Views: 17.6ms | ActiveRecord: 0.5ms | Allocations: 5074)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:41:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/3?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:41:03 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1004)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.0ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4236)
+Completed 200 OK in 29ms (Views: 23.4ms | ActiveRecord: 0.4ms | Allocations: 5082)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:41:03 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/3?data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:44 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 14.8ms | Allocations: 2591)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:44 -0400
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 281)
+  Rendered shared/_header.html.erb (Duration: 3.2ms | Allocations: 686)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_footer.html.erb (Duration: 62.0ms | Allocations: 12665)
+  Rendered layout layouts/application.html.erb (Duration: 108.0ms | Allocations: 20641)
+Completed 200 OK in 118ms (Views: 111.3ms | ActiveRecord: 0.9ms | Allocations: 22370)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:45 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.1ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1018)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.4ms | Allocations: 511)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 4240)
+Completed 200 OK in 24ms (Views: 19.3ms | ActiveRecord: 0.4ms | Allocations: 5125)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:45 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:46 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1018)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 3.2ms | Allocations: 508)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 4219)
+Completed 200 OK in 29ms (Views: 23.5ms | ActiveRecord: 0.5ms | Allocations: 5065)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:50 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1073)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:50 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 54)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_header.html.erb (Duration: 8.2ms | Allocations: 1229)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 97.8ms | Allocations: 18248)
+Completed 200 OK in 106ms (Views: 99.9ms | ActiveRecord: 0.8ms | Allocations: 19194)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:51 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1683)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 3.6ms | Allocations: 737)
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 100.6ms | Allocations: 19057)
+Completed 200 OK in 109ms (Views: 104.0ms | ActiveRecord: 0.4ms | Allocations: 19910)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:52 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1180)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:52 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 54)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_header.html.erb (Duration: 6.4ms | Allocations: 1145)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 94.1ms | Allocations: 18125)
+Completed 200 OK in 99ms (Views: 94.9ms | ActiveRecord: 0.4ms | Allocations: 18971)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:53 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:53 -0400
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1244)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 4.1ms | Allocations: 712)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 86.4ms | Allocations: 17973)
+Completed 200 OK in 98ms (Views: 94.2ms | ActiveRecord: 0.4ms | Allocations: 19435)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:53 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1199)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:53 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 2.5ms | Allocations: 539)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 5192)
+Completed 200 OK in 37ms (Views: 30.6ms | ActiveRecord: 0.7ms | Allocations: 6297)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:54 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1156)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:54 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 202)
+  Rendered shared/_header.html.erb (Duration: 3.4ms | Allocations: 868)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 98.2ms | Allocations: 19125)
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 0.4ms | Allocations: 19995)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:55 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:55 -0400
+  Rendered products/show.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1683)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 1.9ms | Allocations: 862)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 103.3ms | Allocations: 19064)
+Completed 200 OK in 107ms (Views: 104.0ms | ActiveRecord: 0.3ms | Allocations: 19917)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:56 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:56 -0400
+  Rendered products/show.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1683)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 2.3ms | Allocations: 878)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 100.0ms | Allocations: 20522)
+Completed 200 OK in 105ms (Views: 101.1ms | ActiveRecord: 0.4ms | Allocations: 21392)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:57 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1018)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:57 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_header.html.erb (Duration: 9.8ms | Allocations: 1372)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 100.0ms | Allocations: 18301)
+Completed 200 OK in 106ms (Views: 101.7ms | ActiveRecord: 0.5ms | Allocations: 19177)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:42:58 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1355)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:42:58 -0400
+  Rendered shared/_header.html.erb (Duration: 5.2ms | Allocations: 810)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 5084)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.3ms | Allocations: 5932)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:43:00 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1178)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:43:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 2.8ms | Allocations: 518)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 106.9ms | Allocations: 23414)
+Completed 200 OK in 114ms (Views: 108.2ms | ActiveRecord: 0.9ms | Allocations: 24285)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:43:02 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1018)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:43:02 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 54)
+  Rendered shared/_header.html.erb (Duration: 2.9ms | Allocations: 547)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_footer.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 92.0ms | Allocations: 18137)
+Completed 200 OK in 100ms (Views: 93.6ms | ActiveRecord: 0.5ms | Allocations: 18983)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 13:43:04 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1018)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 2.9ms | Allocations: 515)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 4633)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.6ms | Allocations: 5493)
+
+
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 13:43:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 14:18:22 -0400
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 14:18:22 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1258)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 1.4ms | Allocations: 799)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 6543)
+Completed 200 OK in 77ms (Views: 68.3ms | ActiveRecord: 1.6ms | Allocations: 20353)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 14:18:23 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1018)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 14:18:23 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 54)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_header.html.erb (Duration: 9.9ms | Allocations: 2387)
+  Rendered shared/_footer.html.erb (Duration: 53.5ms | Allocations: 10891)
+  Rendered layout layouts/application.html.erb (Duration: 94.9ms | Allocations: 18133)
+Completed 200 OK in 100ms (Views: 96.2ms | ActiveRecord: 0.4ms | Allocations: 18985)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 14:18:23 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1257)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 14:18:23 -0400
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 54)
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+  Rendered shared/_header.html.erb (Duration: 64.1ms | Allocations: 13274)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 95.6ms | Allocations: 18338)
+Completed 200 OK in 102ms (Views: 98.4ms | ActiveRecord: 0.4ms | Allocations: 19327)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 14:18:23 -0400
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 14:18:23 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.2ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1722)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 6.0ms | Allocations: 906)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 10734)
+Completed 200 OK in 47ms (Views: 39.0ms | ActiveRecord: 0.5ms | Allocations: 13230)
+
+
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 14:18:33 -0400
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.3ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1018)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 41)
+  Rendered shared/_header.html.erb (Duration: 3.3ms | Allocations: 685)
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 14:18:33 -0400
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 25)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 5065)
+Completed 200 OK in 34ms (Views: 30.4ms | ActiveRecord: 0.6ms | Allocations: 5915)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Started GET "/products/3.xlsx" for ::1 at 2022-08-19 15:02:11 -0400
+Processing by ProductsController#show as XLSX
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering products/show.xlsx.axlsx
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.xlsx.axlsx (Duration: 2453.7ms | Allocations: 9573)
+Completed 200 OK in 2476ms (Views: 2454.4ms | ActiveRecord: 1.8ms | Allocations: 11191)
+
+

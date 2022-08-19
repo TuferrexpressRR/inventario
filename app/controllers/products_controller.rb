@@ -47,11 +47,12 @@ class ProductsController < ApplicationController
     end
   end
 
+
   def new_movement
     @product = Product.find(params[:id])
     @movement = Movement.new(product_id: @product.id)
   end
-  
+
   def create_movement
     @product = Product.find(params[:id])
     @movement = Movement.new(movement_params)
@@ -63,6 +64,14 @@ class ProductsController < ApplicationController
       render :new_movement, status: :unprocessable_entity
     end
   end
+
+  def destroy
+      @product = Product.find(params[:id])
+      @product.destroy
+      redirect_to @product, notice: 'Se elimino el producto correctamente', status: :see_other
+
+  end
+
 
   private
   def product_params
