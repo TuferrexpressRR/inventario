@@ -5364,3 +5364,31 @@ Processing by ProductsController#show as XLSX
 Completed 200 OK in 2476ms (Views: 2454.4ms | ActiveRecord: 1.8ms | Allocations: 11191)
 
 
+Started GET "/products/js/scripts.js" for ::1 at 2022-08-19 15:12:09 -0400
+Started GET "/products/3?data%5Bturbo_confirm%5D=%C2%BFEstas+seguro%3F&data%5Bturbo_method%5D=delete" for ::1 at 2022-08-19 15:12:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/products/js/scripts.js"):
+  
+Processing by ProductsController#show as HTML
+  Parameters: {"data"=>{"turbo_confirm"=>"¿Estas seguro?", "turbo_method"=>"delete"}, "id"=>"3"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/products_controller.rb:28:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering products/show.html.erb within layouts/application
+  [1m[36mMovement Load (0.5ms)[0m  [1m[34mSELECT "movements".* FROM "movements" WHERE "movements"."product_id" = ?[0m  [["product_id", 3]]
+  ↳ app/models/product.rb:8:in `quantity'
+  Rendered products/show.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1072)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 48)
+  Rendered shared/_header.html.erb (Duration: 69.7ms | Allocations: 785)
+  Rendered shared/_footer.html.erb (Duration: 0.2ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 381.3ms | Allocations: 9719)
+Completed 200 OK in 499ms (Views: 382.0ms | ActiveRecord: 2.2ms | Allocations: 11457)
+
+
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
